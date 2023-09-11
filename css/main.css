@@ -1,0 +1,201 @@
+/* inicio */
+body {
+    /* height: 3000px;
+    overflow-x: hidden; */
+    margin: 0px;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Banner styles */
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+}
+
+.banner-container {
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 62px;
+    font-weight: bold;
+}
+
+
+.banner p {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.banner button {
+    background-color: white;
+    color: black;
+    border: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.banner button a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* productos */
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin: 50px;
+    width: 250px;
+    height: 370px;
+    border: 1px black solid;
+    box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
+    -moz-box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
+    border-radius: 11px;
+}
+
+.card > img {
+    width: 100%;
+    height: 250px;
+}
+
+.card h3 {
+    font-size: 25px;
+}
+
+.precio {
+    color: black;
+    font-size: 22px;
+    
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.ver-carrito {
+    position: fixed;
+    z-index: 1;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+/* modal content */
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* for the top */
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#filter__input{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
