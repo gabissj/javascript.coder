@@ -194,6 +194,24 @@ body {
     padding-top: 20px;
 }
 
+/*delete button product*/
+.delete-product {
+    cursor: pointer;
+}
+
+/*CarritoCounter*/
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding:5px;
+    top: 37px;
+    right: 12px;
+    position: absolute;
+    display: none;
+}
+
 #filter__input{
     display: block;
     margin: auto;

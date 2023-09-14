@@ -14,11 +14,15 @@
     src="./img/fondo.jpeg"
     alt="Bg image">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./img/icono.jpeg" alt="logo" width="55">
+                <h1 class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" 
+                    class="cantidad-carrito"></span></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +42,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Almacen</a>
                     </li>
-                    <h1 class="ver-carrito" id="verCarrito">🛒</h1>
                 </ul>
             </div>
         </div>
@@ -59,7 +62,9 @@
     <!--modal container-->
     <div id="modal-container" class="modal-container"></div>
 
-    <script src="./db/productos.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/carrito.js"></script>
 
     <!-- efecto navbar -->
     <script>
@@ -78,7 +83,7 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous">
     </script>
-
+    
 </body>
 
 </html>
